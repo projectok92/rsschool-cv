@@ -42,3 +42,23 @@ To obtain a position of Junior Front-end developer at AWS Lambda Team.
 * Commitment
 * Determination
 * Teamwork
+
+## EDUCATION
+####  Front-end JS | Jul 2021 — Present
+RS School
+#### Activate Leadership | Dec 2019 — Dec 2019
+Wiser 360
+#### Copywriting at Ryba course | Mar 2018 — Mar 2018
+Svobodnaya. Education platform
+#### SMM course | Sep 2017 — Jan 2018
+Marketing Business Institute (Ireland)
+#### Master's in System operation and maintenance engineer | Sep 2010 — Mar 2016
+National Aviation University, Kyiv
+
+## INTERESTS
+Parenting, Music (Guitar, Bass), Gadgets, Gaming
+
+## LANGUAGES
+* English — Upper Intermediate (B2)
+* Ukrainian — Native
+* Russian — Fluent
