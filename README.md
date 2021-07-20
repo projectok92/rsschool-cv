@@ -1,1 +1,1 @@
-# rsschool-cv
+https://projectok92.github.io/rsschool-cv/
