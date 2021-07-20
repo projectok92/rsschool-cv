@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 640px;
+  width: 100%;
+  max-width: 1024px;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+hr {
+  color: black;
+  background-color: black;
+  height: 4px;
+  margin-bottom: 8px;
+}
+
+.profile-pic {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.description {
+  width: 70%;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  width: 25%;
+  height: 24px;
+  margin-right: 5%;
+  color: white;
+  background-color: black;
+  text-align: right;
+  padding-right: 8px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 16px;
+  width: 70%;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+a,
+.mail,
+.tel {
+  text-decoration: none;
+  color: black;
+  transition-duration: 500ms;
+}
+
+a:hover,
+.mail:hover,
+.tel:hover{
+  text-decoration: none;
+  color: teal;
+}
+
+.mail::before {
+  content: "📧 ";
+}
+
+.tel::before {
+  content: "📞 ";
+}
+
+.title-period-container {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+section {
+  display: flex;
+  margin-top: 21px;
+}
+
+.title-period-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+code {
+  font-family: Inconsolata, serif;
+}
+
+ul{
+  margin-left: 18px;
+}
+
+.position {
+  margin-bottom: 8px;
+}
+
+.place-of-work {
+  margin-bottom: 16px;
+}
+
+.skills-lists {
+  display: flex;
+}
+
+.ul-col {
+  margin-right: 10vw;
+}
+
+.creds {
+  max-width: 480px;
+  display: flex;
+  margin: 10% auto 2%;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.rss-logo {
+  height: 20px;
+}
