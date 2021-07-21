@@ -64,7 +64,6 @@ address {
   font-style: normal;
   display: flex;
   justify-content: space-between;
-
 }
 
 a,
@@ -90,10 +89,13 @@ a:hover,
   content: "📞 ";
 }
 
+.tg::before {
+  content: "📱 ";
+}
+
 .title-period-container {
   font-size: 16px;
   font-weight: bold;
-
 }
 
 section {
@@ -140,4 +142,8 @@ ul{
 
 .rss-logo {
   height: 20px;
+}
+
+.no-bullet-li {
+  list-style: none;
 }
