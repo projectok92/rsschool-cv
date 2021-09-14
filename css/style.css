@@ -108,9 +108,9 @@ section {
   justify-content: space-between;
 }
 
-code {
+/* code {
   font-family: Inconsolata, serif;
-}
+} */
 
 ul{
   margin-left: 18px;

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/prism.css">
 </head>
 <body>
   <div class="container">
@@ -114,9 +115,24 @@
       <section class="code-sample">
         <h2 class="block-heading">Code sample (JS)</h2>
         <div class="description">
-          <code>
-            const findShort = s => Math.min(...(s.split(" ").map(el => el.length)));
-          </code>
+          <pre><code class="language-js">//Build Tower by the following number of floors (integer and always greater than 0).
+
+const towerBuilder = nFloors => {
+  let floors = nFloors;
+  let res = [];
+  let curFloor = '';
+  let repeatSpaces = floors - 1;
+  let repeatStars = 1;
+  
+  while (floors > 0) {
+    curFloor = ' '.repeat(repeatSpaces) + '*'.repeat(repeatStars) + ' '.repeat(repeatSpaces);
+    res.push(curFloor);
+    repeatSpaces = repeatSpaces - 1;
+    repeatStars = repeatStars + 2;
+    floors--;
+  }
+  return res;
+};</code></pre>
         </div>
       </section>
   
@@ -226,7 +242,7 @@
       <div class="creds">
         <span><a href="https://github.com/projectok92" target="blanc">GitHub</a></span>
         <span> | </span>
-        <span><time datetime="2021">2021</time></span>
+        <span><time id="year" datetime="2021"></time></span>
         <span> | </span>
         <span>
           <a href="https://rs.school/js/" target="blanc">
@@ -237,5 +253,9 @@
 
     </footer>
   </div>
+
+  <script src="./script/script.js"></script>
+  <script src="./script/prism.js"></script>
+
 </body>
 </html>
