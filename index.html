@@ -10,13 +10,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/prism.css">
 </head>
 <body>
   <div class="container">
-    <header>
+    
+    <header id="general-info">
+      <nav class="navigation" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+  
+          <span></span>
+          <span></span>
+          <span></span>
+  
+          <ul id="menu">
+            <li class="no-bullet-li"><a href="#general-info">General info</a></li>
+            <li class="no-bullet-li"><a href="#objective">Objective</a></li>
+            <li class="no-bullet-li"><a href="#work-experience">Work experience</a></li>
+            <li class="no-bullet-li"><a href="#qalifications">Qalifications</a></li>
+            <li class="no-bullet-li"><a href="#code-sample">Code sample</a></li>
+            <li class="no-bullet-li"><a href="#projects">Recent projects</a></li>
+            <li class="no-bullet-li"><a href="#soft-skills">Soft skills</a></li>
+            <li class="no-bullet-li"><a href="#education">Education</a></li>
+            <li class="no-bullet-li"><a href="#interests">Interests</a></li>
+            <li class="no-bullet-li"><a href="#languages">Languages</a></li>
+          </ul>
+        </div>
+      </nav>
       <img class="profile-pic" src="./images/ok.jpg" alt="Oleksandr Koval">
       <div class="description">
-        <h1>Oleksandr Koval</h1>
+        <h1>Oleksandr Koval | Front-end developer</h1>
         <hr>
         <address>
           <div class="place">
@@ -35,14 +59,14 @@
     </header>
   
     <main>
-      <section class="objective">
+      <section class="objective" id="objective">
         <h2 class="block-heading">Objective</h2>
         <div class="description">
           <p>To obtain a position of Junior Front-end developer at AWS Lambda Team.</p>
         </div>
       </section>
   
-      <section class="work-experience">
+      <section class="work-experience" id="work-experience">
         <h2 class="block-heading">Work experience</h2>
         <div class="description">
           <div class="place-of-work">
@@ -97,7 +121,7 @@
         </div>
       </section>
   
-      <section class="qalifications">
+      <section class="qalifications" id="qalifications">
         <h2 class="block-heading">Qualifications</h2>
         <div class="description">
           <ul>
@@ -111,16 +135,72 @@
         </div>
       </section>
   
-      <section class="code-sample">
+      <section class="code-sample" id="code-sample">
         <h2 class="block-heading">Code sample (JS)</h2>
         <div class="description">
-          <code>
-            const findShort = s => Math.min(...(s.split(" ").map(el => el.length)));
-          </code>
+          <pre><code class="language-js">//Build Tower by the following number of floors (integer and always greater than 0).
+
+const towerBuilder = nFloors => {
+  let floors = nFloors;
+  let res = [];
+  let curFloor = '';
+  let repeatSpaces = floors - 1;
+  let repeatStars = 1;
+  
+  while (floors > 0) {
+    curFloor = ' '.repeat(repeatSpaces) + '*'.repeat(repeatStars) + ' '.repeat(repeatSpaces);
+    res.push(curFloor);
+    repeatSpaces = repeatSpaces - 1;
+    repeatStars = repeatStars + 2;
+    floors--;
+  }
+  return res;
+};</code></pre>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="block-heading">Recent projects</h2>
+        <div class="description tiles">
+          <a class="tile" href="https://rolling-scopes-school.github.io/projectok92-JSFEPRESCHOOL/photofilter/" target="_blank">
+            <img class="tile-pic" src="./images/photofilter_cover.png" alt="Photofilter">
+            <h3>Simple Photofilter</h3>
+            <hr class="hr-line">
+            <p class="tile-descript">
+              Implementation of javascript to manipulate styles in css.
+            </p>
+          </a>
+
+          <a class="tile" href="https://rolling-scopes-school.github.io/projectok92-JSFEPRESCHOOL/museum/" target="_blank">
+            <img class="tile-pic" src="./images/louvre_cover.png" alt="Museum">
+            <h3>Louvre landing page</h3>
+            <hr class="hr-line">
+            <p class="tile-descript">
+              Realizing museum landing page in html and css according to figma layout.
+            </p>
+          </a>
+
+          <a class="tile" href="https://fuelc.netlify.app/" target="_blank">
+            <img class="tile-pic" src="./images/fuelc_cover.png" alt="Online fuel calculator">
+            <h3>Online fuel calculator</h3>
+            <hr class="hr-line">
+            <p class="tile-descript">
+              An easy-to-use calculator for predicting fuel consumption in trips.
+            </p>
+          </a>
+
+          <a class="tile" href="https://rolling-scopes-school.github.io/projectok92-JSFEPRESCHOOL/drum-kit/" target="_blank">
+            <img class="tile-pic" src="./images/drumkit_cover.png" alt="Drum kit">
+            <h3>Drum kit</h3>
+            <hr class="hr-line">
+            <p class="tile-descript">
+              Online drum kit. Reacts on keyboard and mouse.
+            </p>
+          </a>
         </div>
       </section>
   
-      <section class="soft-scills">
+      <section class="soft-skills" id="soft-skills">
         <h2 class="block-heading">Soft skills</h2>
         <div class="description">
           <div class="skills-lists">
@@ -138,7 +218,7 @@
         </div>
       </section>
   
-      <section class="education">
+      <section class="education" id="education">
         <h2 class="block-heading">Education</h2>
         <div class="description">
           <div class="place-of-work">
@@ -203,14 +283,14 @@
         </div>
       </section>
   
-      <section class="interests">
+      <section class="interests" id="interests">
         <h2 class="block-heading">Interests</h2>
         <div class="description">
           <p>Parenting, Music (Guitar, Bass), Gadgets, Gaming</p>
         </div>
       </section>
   
-      <section class="languages">
+      <section class="languages" id="languages">
         <h2 class="block-heading">Languages</h2>
         <div class="description">
           <ul>
@@ -223,13 +303,13 @@
     </main>
   
     <footer>
-      <div class="creds">
-        <span><a href="https://github.com/projectok92" target="blanc">GitHub</a></span>
+      <div class="creds" id="credentionals">
+        <span><a class="footer-link" href="https://github.com/projectok92" target="blanc">GitHub</a></span>
         <span> | </span>
-        <span><time datetime="2021">2021</time></span>
+        <span><time class="date" id="year" datetime="2021"></time></span>
         <span> | </span>
         <span>
-          <a href="https://rs.school/js/" target="blanc">
+          <a class="footer-link" href="https://rs.school/js/" target="blanc">
             <img class="rss-logo" src="https://rs.school/images/rs_school_js.svg" alt="rss logo">
           </a>
         </span>
@@ -237,5 +317,9 @@
 
     </footer>
   </div>
+
+  <script src="./script/script.js"></script>
+  <script src="./script/prism.js"></script>
+
 </body>
 </html>
