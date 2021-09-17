@@ -352,5 +352,21 @@ ul{
     justify-content: space-around;
   }
 
+  .tile {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tiles {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile-pic {
+    width: 100%;
+    max-width: 100%;
+}
+
 
 }
