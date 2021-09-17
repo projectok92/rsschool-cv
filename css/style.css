@@ -110,6 +110,10 @@ a,
   font-weight: bold;
 }
 
+.toShow {
+  display: none;
+}
+
 section {
   display: flex;
   margin-top: 21px;
@@ -289,4 +293,64 @@ ul{
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+@media only screen and (max-width: 639px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .profile-pic {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    
+  }
+
+  .container {
+    padding: 0;
+    min-width: 0;
+  }
+
+  h2 {
+    padding: 0 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .description {
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  #menuToggle {
+    top: 20px;
+    left: 20px;
+  }
+
+  .toHide {
+    display: none;
+  }
+
+  .toShow {
+    display: block;
+  }
+
+  .period {
+    text-align: right;
+}
+
+  .creds {
+    font-size: 14px;
+    justify-content: space-around;
+  }
+
+
 }
