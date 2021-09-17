@@ -8,13 +8,12 @@
 
 .container {
   margin: 0 auto;
-  min-width: 720px;
+  min-width: 640px;
   width: 100%;
   max-width: 1024px;
   padding: 8px;
   font-weight: 400;
   font-size: 14px;
-  flex-wrap: wrap;
 }
 
 header {
@@ -33,6 +32,7 @@ hr {
 
 .profile-pic {
   width: 25%;
+  height: 25%;
   aspect-ratio: 1 / 1;
   margin-right: 5%;
 }
