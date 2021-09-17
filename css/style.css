@@ -33,7 +33,7 @@ hr {
 .profile-pic {
   width: 25%;
   height: 25%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto 1 / 1;
   margin-right: 5%;
 }
 
